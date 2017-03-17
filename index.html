@@ -12683,20 +12683,20 @@ body .animate-repeat.ng-enter.ng-enter-active {
     </div>
 </div>
 
-<div style="position: fixed; top: 0; right: 0; bottom: 0; left: 0; background: #000000; opacity: 0.5; z-index: 100">
+<div style="position: fixed; top: 0; right: 0; bottom: 0; left: 0; background: #000000; opacity: 0.8; z-index: 100">
 
 </div>
 
 <div class="row">
-    <div class="col-md-offset-4 col-md-4" style="position: fixed; margin-top: 100px; background: #FFF; opacity: 1; z-index: 200; border-radius: 4px;">
+    <div class="col-md-offset-4 col-md-4" style="position: fixed; margin-top: 200px;  opacity: 1; z-index: 200; border-radius: 4px; color: #FFF;">
 
-    <div class="modal-header">
-        <h3 class="modal-title"> <div class="text-center"> Tripndrive fin de l'aventure</div> </h3>
-    </div>
-    <div class="modal-body" style="padding: 30px 20px">
-        De l’Elysée au tribunal de commerce en 1 semaine<br>
-        Pour en savoir plus, <a href="https://medium.com/@fxleduc/de-lelys%C3%A9e-au-tribunal-de-commerce-en-1-semaine-d7fed4b3590c#.161sjm5up">cliquez ici</a>.
-    </div>
+
+        <h1 style="font-size: 32px"> <div class="text-center"> Tripndrive fin de l'aventure</div> </h1>
+
+        <h2 class="text-center" style="28px">
+            De l’Elysée au tribunal de commerce en 1 semaine<br>
+            Pour en savoir plus, <a href="https://medium.com/@fxleduc/de-lelys%C3%A9e-au-tribunal-de-commerce-en-1-semaine-d7fed4b3590c#.161sjm5up">cliquez ici</a>.
+        </h2>
 
 </div><div tnd-track="page_home"></div>
 
@@ -12748,159 +12748,11 @@ body .animate-repeat.ng-enter.ng-enter-active {
 
 </header>
     <div class="block1-wrapper">
-        <div class="container">
+        <div class="container" style="height: 400px">
 
             <!-- h1 -->
-            <div class="row">
-                <div class="col-sm-offset-2 col-sm-8 text-center">
-                    <h1>Bougez malin avec l'autopartage</h1>
-                </div>
-
-            </div>
         </div>
 
-        <!-- forms -->
-        <div class="container">
-            <div class="row">
-
-                <!-- park form -->
-                <div class="col-sm-offset-1 col-sm-5 col-xs-offset-1 col-xs-10">
-                    <div class="row">
-                        <div class="col-sm-8 col-sm-offset-3 col-xs-offset-0 col-xs-12 form-wrapper">
-                            <div class="tnd-form-title-wrapper">
-                                <h2 class="tnd-form-title">Parking qui rapporte en louant sa voiture</h2>
-                            </div>
-
-                            <div id="park-form">
-
-<form name="tndParkForm" ng-submit="tndSubmit(tndParkForm)" class="form-horizontal park-horizontal-form" novalidate="">
-
-    <div class="form-group site-input" ng-class="{&#39;has-error&#39; : (tndParkForm.site.$invalid || tndParkForm.currentSite.$invalid) &amp;&amp; tndParkForm.$submitted}">
-          <span class="input-group">
-            <input type="text" autocomplete="off" name="currentSite" required="" placeholder="Site" id="park-site-autocomplete" class="form-control" ng-model="currentSite" uib-typeahead="s as s.label for s in sites | filter:{label : $viewValue}" typeahead-template-url="site-autocomplete.html" typeahead-min-length="0" typeahead-editable="false" typeahead-on-select="onSiteSelect($item, $model)" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
-             <input type="hidden" id="site" name="site" ng-model="search.siteCode" required="">
-             <span class="input-group-btn">
-                 <button type="button" class="btn btn-default" clear-and-click="" cac-target-id="park-site-autocomplete">
-                     <i class="fa fa-map-marker"></i>
-                 </button>
-             </span>
-         </span>
-    </div>
-
-    <div class="form-group" ng-class="{&#39;has-error&#39; : tndParkForm.startDate.$invalid &amp;&amp; tndParkForm.$submitted}">
-        <!-- Start -->
-        <div class="input-group">
-            <input type="text" class="form-control" name="startDate" placeholder="Date de début" autocomplete="off" uib-datepicker-popup="" ng-model="search.startDate" is-open="startDatePopup.opened" datepicker-options="startDatePopup.options" ng-required="true" ng-click="openStartDate()">
-            <span class="input-group-btn">
-                <button type="button" class="btn btn-default" ng-click="openStartDate()"><i class="fa fa-calendar"></i></button>
-            </span>
-        </div>
-    </div>
-
-    <div class="form-group" ng-class="{&#39;has-error&#39; : tndParkForm.endDate.$invalid &amp;&amp; tndParkForm.$submitted}">
-        <!-- End -->
-        <div class="input-group">
-            <input type="text" class="form-control" name="endDate" placeholder="Date de fin" autocomplete="off" uib-datepicker-popup="" ng-model="search.endDate" is-open="endDatePopup.opened" datepicker-options="endDatePopup.options" ng-required="true" ng-click="openEndDate()">
-            <span class="input-group-btn">
-                <button type="button" class="btn btn-default" ng-click="openEndDate()"><i class="fa fa-calendar"></i></button>
-            </span>
-        </div>
-    </div>
-    <div class="form-group">
-
-        <div class="error-wrapper" ng-cloak="">
-            <p ng-if="tndParkForm.$error.required &amp;&amp; tndParkForm.$submitted" class="error"> Tous les champs sont obligatoires </p>
-        </div>
-
-        <div class="btn-group btn-group-justified" role="group">
-            <div class="btn-group" role="group">
-                <button type="submit" class="btn btn-park">Proposer ma voiture</button>
-            </div>
-        </div>
-    </div>
-</form>                            </div>
-
-                            <p>
-                                <a href="#" class="more-info"> Plus d'infos </a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="v-padding-xs">&nbsp;</div>
-                </div>
-
-                <!-- rent-form -->
-                <div class="col-sm-offset-0 col-sm-5 col-xs-offset-1 col-xs-10">
-                    <div class="row">
-                        <div class="col-sm-8 col-sm-offset-1 col-xs-offset-0 col-xs-12 form-wrapper">
-                            <div class="tnd-form-title-wrapper">
-                                <h2 class="tnd-form-title">Location de voiture dès 20€ par jour</h2>
-                            </div>
-
-                            <div id="rent-form">
-
-<form role="form" name="tndForm" class="form-horizontal rent-form-horizontal" ng-submit="tndSubmit(tndForm)" novalidate="">
-
-    <div class="form-group" ng-class="{&#39;has-error&#39; : (tndForm.lat.$invalid || tndForm.lng.$invalid) &amp;&amp; tndForm.$submitted}">
-        <div class="input-group">
-            <input type="text" class="form-control prediction-autocomplete" placeholder="Adresse" autocomplete="off" geo-autocomplete="" label="searchPositionLabel" on-location-changed="locationChanged(lat, lng, siteCode)" location="getLocation()" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
-            <span class="input-group-btn">
-                <button type="button" class="btn btn-default" ng-click="setUserCurrentLocation()">
-                    <i class="fa fa-location-arrow"></i>
-                </button>
-            </span>
-        </div>
-    </div>
-
-    <input type="hidden" name="lat" ng-model="search.lat" ng-required="true">
-    <input type="hidden" name="lng" ng-model="search.lng" required="">
-
-    <div class="form-group" ng-class="{&#39;has-error&#39; : tndForm.startDate.$invalid &amp;&amp; tndForm.$submitted}">
-        <div class="input-group">
-            <input type="text" class="form-control" name="startDate" placeholder="Date de début" autocomplete="off" uib-datepicker-popup="" ng-model="search.startDate" is-open="startDatePopup.opened" datepicker-options="startDatePopup.options" min-date="tndToday" ng-required="true" ng-click="openStartDate()">
-            <span class="input-group-btn">
-                <button type="button" class="btn btn-default" ng-click="openStartDate()"><i class="fa fa-calendar"></i></button>
-            </span>
-        </div>
-    </div>
-
-    <div class="form-group" ng-class="{&#39;has-error&#39; : tndForm.endDate.$invalid &amp;&amp; tndForm.$submitted}">
-        <div class="input-group">
-            <input type="text" class="form-control" name="endDate" placeholder="Date de fin" autocomplete="off" uib-datepicker-popup="" ng-model="search.endDate" is-open="endDatePopup.opened" datepicker-options="endDatePopup.options" ng-required="true" ng-click="openEndDate()">
-            <span class="input-group-btn">
-                <button type="button" class="btn btn-default" ng-click="openEndDate()"><i class="fa fa-calendar"></i></button>
-            </span>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <!-- errors -->
-        <div class="error-wrapper" ng-cloak="">
-            <p ng-if="tndForm.$error.required &amp;&amp; tndForm.$submitted" class="error"> Tous les champs sont obligatoires </p>
-        </div>
-
-        <div class="btn-group btn-group-justified" role="group">
-            <div class="btn-group" role="group">
-                <button type="submit" class="btn btn-rent">Réserver une voiture</button>
-            </div>
-        </div>
-    </div>
-</form>                            </div>
-
-                            <p>
-                                <a href="#" class="more-info"> Plus d'infos </a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="v-padding-xs">&nbsp;</div>
-                </div>
-            </div>
-
-            <p class="home-legend">
-            100% assuré <img src="./resource/images/allianz_white_medium.png" alt="Allianz Logo">
-            </p>
-        </div>
     </div>
 
 
